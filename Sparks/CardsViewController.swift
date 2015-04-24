@@ -10,12 +10,24 @@ import UIKit
 
 class CardsViewController: UIViewController {
 
+    let frontCardTopMargin: CGFloat = 0
+    let backCardTopMargin: CGFloat = 10
+    
     @IBOutlet weak var cardsStackView: UIView!
+    
+    var backCard: SwipeView?
+    var frontCard: SwipeView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        backCard = SwipeView(frame: createCardFrame(backCardTopMargin))
+        cardsStackView.addSubview(backCard!)
+        
+        frontCard = SwipeView(frame: createCardFrame(frontCardTopMargin))
+        cardsStackView.addSubview(frontCard!)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,15 +35,7 @@ class CardsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func createCardFrame(topMargin: CGFloat) -> CGRect {
+        return CGRectMake(0, topMargin, cardsStackView.frame.width, cardsStackView.frame.height)
     }
-    */
-
 }
