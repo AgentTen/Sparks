@@ -13,6 +13,7 @@
 		DFF5319D1AEAC25500D0CEFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF5319C1AEAC25500D0CEFE /* Images.xcassets */; };
 		DFF531A01AEAC25500D0CEFE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFF5319E1AEAC25500D0CEFE /* LaunchScreen.xib */; };
 		DFF531AC1AEAC25500D0CEFE /* SparksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF531AB1AEAC25500D0CEFE /* SparksTests.swift */; };
+		DFF531B71AEAC3CA00D0CEFE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF531B61AEAC3CA00D0CEFE /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		DFF531A51AEAC25500D0CEFE /* SparksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SparksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF531AA1AEAC25500D0CEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFF531AB1AEAC25500D0CEFE /* SparksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparksTests.swift; sourceTree = "<group>"; };
+		DFF531B61AEAC3CA00D0CEFE /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				DFF531951AEAC25500D0CEFE /* AppDelegate.swift */,
 				DFF531971AEAC25500D0CEFE /* ViewController.swift */,
+				DFF531B51AEAC38F00D0CEFE /* Views */,
 				DFF531991AEAC25500D0CEFE /* Main.storyboard */,
 				DFF5319C1AEAC25500D0CEFE /* Images.xcassets */,
 				DFF5319E1AEAC25500D0CEFE /* LaunchScreen.xib */,
@@ -110,6 +113,14 @@
 				DFF531AA1AEAC25500D0CEFE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFF531B51AEAC38F00D0CEFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFF531B61AEAC3CA00D0CEFE /* CardView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFF531981AEAC25500D0CEFE /* ViewController.swift in Sources */,
+				DFF531B71AEAC3CA00D0CEFE /* CardView.swift in Sources */,
 				DFF531961AEAC25500D0CEFE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
