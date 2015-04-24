@@ -48,6 +48,12 @@ class SwipeView: UIView {
         center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
     }
     
+    private func resetViewPositionAndTransformations() {
+        UIView.animateWithDuration(0.2, animations: { () -> Void in
+            self.center = self.originalPoint!
+        })
+    }
+    
     private func setConstraints(){
         
         addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0))
