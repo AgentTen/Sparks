@@ -15,6 +15,7 @@
 		DFF531AC1AEAC25500D0CEFE /* SparksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF531AB1AEAC25500D0CEFE /* SparksTests.swift */; };
 		DFF531B71AEAC3CA00D0CEFE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF531B61AEAC3CA00D0CEFE /* CardView.swift */; };
 		DFF531B91AEACB1200D0CEFE /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF531B81AEACB1200D0CEFE /* SwipeView.swift */; };
+		DFF531BC1AEACDB200D0CEFE /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF531BB1AEACDB200D0CEFE /* CardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		DFF531AB1AEAC25500D0CEFE /* SparksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparksTests.swift; sourceTree = "<group>"; };
 		DFF531B61AEAC3CA00D0CEFE /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DFF531B81AEACB1200D0CEFE /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		DFF531BB1AEACDB200D0CEFE /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				DFF531951AEAC25500D0CEFE /* AppDelegate.swift */,
-				DFF531971AEAC25500D0CEFE /* ViewController.swift */,
 				DFF531B51AEAC38F00D0CEFE /* Views */,
+				DFF531BA1AEACD8D00D0CEFE /* ViewControllers */,
 				DFF531991AEAC25500D0CEFE /* Main.storyboard */,
 				DFF5319C1AEAC25500D0CEFE /* Images.xcassets */,
 				DFF5319E1AEAC25500D0CEFE /* LaunchScreen.xib */,
@@ -124,6 +126,15 @@
 				DFF531B81AEACB1200D0CEFE /* SwipeView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		DFF531BA1AEACD8D00D0CEFE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DFF531971AEAC25500D0CEFE /* ViewController.swift */,
+				DFF531BB1AEACDB200D0CEFE /* CardsViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +239,7 @@
 			files = (
 				DFF531981AEAC25500D0CEFE /* ViewController.swift in Sources */,
 				DFF531B91AEACB1200D0CEFE /* SwipeView.swift in Sources */,
+				DFF531BC1AEACDB200D0CEFE /* CardsViewController.swift in Sources */,
 				DFF531B71AEAC3CA00D0CEFE /* CardView.swift in Sources */,
 				DFF531961AEAC25500D0CEFE /* AppDelegate.swift in Sources */,
 			);
