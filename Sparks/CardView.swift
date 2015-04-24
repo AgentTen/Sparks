@@ -30,15 +30,30 @@ class CardView: UIView {
     }
     
     private func initialize() {
+        
         imageView.setTranslatesAutoresizingMaskIntoConstraints(false)
         imageView.backgroundColor = UIColor.redColor()
         addSubview(imageView)
+        
         nameLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
         addSubview(nameLabel)
+        
         backgroundColor = UIColor.whiteColor()
         layer.borderWidth = 0.5
         layer.borderColor = UIColor.lightGrayColor().CGColor
         layer.cornerRadius = 5
         layer.masksToBounds = true
+    }
+    
+    private func setConstraints() {
+        
+        addConstraint(NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0))
+        
+        addConstraint(NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.Leading, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Leading, multiplier: 1.0, constant: 0))
+        
+        addConstraint(NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Width, multiplier: 1.0, constant: 0))
+        
+        addConstraint(NSLayoutConstraint(item: imageView, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 0))
+        
     }
 }
