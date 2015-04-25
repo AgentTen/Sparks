@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CardsViewController: UIViewController {
+class CardsViewController: UIViewController, SwipeViewDelegate {
 
     let frontCardTopMargin: CGFloat = 0
     let backCardTopMargin: CGFloat = 10
@@ -26,9 +26,11 @@ class CardsViewController: UIViewController {
         cardsStackView.backgroundColor = UIColor.clearColor()
         
         backCard = SwipeView(frame: createCardFrame(backCardTopMargin))
+        backCard!.delegate = self
         cardsStackView.addSubview(backCard!)
         
         frontCard = SwipeView(frame: createCardFrame(frontCardTopMargin))
+        frontCard!.delegate = self
         cardsStackView.addSubview(frontCard!)
         
     }
@@ -40,5 +42,21 @@ class CardsViewController: UIViewController {
     
     private func createCardFrame(topMargin: CGFloat) -> CGRect {
         return CGRectMake(0, topMargin, cardsStackView.frame.width, cardsStackView.frame.height)
+    }
+    
+    // MARK: SwipeViewDelegate
+    
+    func swipedLeft() {
+        println("left")
+        if let frontCard = frontCard {
+            frontCard.removeFromSuperview()
+        }
+    }
+    
+    func swipedRight() {
+        println("right")
+        if let frontCard = frontCard {
+            frontCard.removeFromSuperview()
+        }
     }
 }
