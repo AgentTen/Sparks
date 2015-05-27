@@ -26,8 +26,6 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
         cardsStackView.backgroundColor = UIColor.clearColor()
         
         backCard = createCard(backCardTopMargin)
@@ -39,7 +37,6 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     private func createCardFrame(topMargin: CGFloat) -> CGRect {

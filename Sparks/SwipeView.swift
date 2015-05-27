@@ -40,11 +40,6 @@ class SwipeView: UIView {
         initialize()
     }
     
-    override init() {
-        super.init()
-        initialize()
-    }
-    
     private func initialize() {
         self.backgroundColor = UIColor.redColor()
         
