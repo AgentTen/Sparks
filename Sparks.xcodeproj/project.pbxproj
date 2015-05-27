@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A1C49C971B778D8982CDD5B3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD047D0A2748F082C9B2A56 /* libPods.a */; };
+		DF047DB41B163072009ED0F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF047DB31B163072009ED0F9 /* LoginViewController.swift */; };
 		DF12D4E21AEEC7AA00E3170E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF12D4E11AEEC7AA00E3170E /* AudioToolbox.framework */; };
 		DF12D4E41AEEC7B000E3170E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF12D4E31AEEC7B000E3170E /* CFNetwork.framework */; };
 		DF12D4E61AEEC7B600E3170E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF12D4E51AEEC7B600E3170E /* CoreGraphics.framework */; };
@@ -44,6 +45,7 @@
 		3FD047D0A2748F082C9B2A56 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		978E76D08B8AC172E338C205 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B359558A56186EB8E56EA9DA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DF047DB31B163072009ED0F9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DF12D4E11AEEC7AA00E3170E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		DF12D4E31AEEC7B000E3170E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DF12D4E51AEEC7B600E3170E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -211,6 +213,7 @@
 			children = (
 				DFF531971AEAC25500D0CEFE /* ViewController.swift */,
 				DFF531BB1AEACDB200D0CEFE /* CardsViewController.swift */,
+				DF047DB31B163072009ED0F9 /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF047DB41B163072009ED0F9 /* LoginViewController.swift in Sources */,
 				DFF531981AEAC25500D0CEFE /* ViewController.swift in Sources */,
 				DFF531B91AEACB1200D0CEFE /* SwipeView.swift in Sources */,
 				DFF531BC1AEACDB200D0CEFE /* CardsViewController.swift in Sources */,
