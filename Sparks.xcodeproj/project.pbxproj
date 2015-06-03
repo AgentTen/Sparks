@@ -20,6 +20,7 @@
 		DF12D4F21AEEC7D800E3170E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF12D4F11AEEC7D800E3170E /* SystemConfiguration.framework */; };
 		DF12D4F41AEEC7DF00E3170E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF12D4F31AEEC7DF00E3170E /* libz.dylib */; };
 		DF12D4F61AEEC7E500E3170E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF12D4F51AEEC7E500E3170E /* libsqlite3.dylib */; };
+		DF5007731B1FBAF70060BCE4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5007721B1FBAF70060BCE4 /* User.swift */; };
 		DFF531961AEAC25500D0CEFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF531951AEAC25500D0CEFE /* AppDelegate.swift */; };
 		DFF531981AEAC25500D0CEFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF531971AEAC25500D0CEFE /* ViewController.swift */; };
 		DFF5319B1AEAC25500D0CEFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFF531991AEAC25500D0CEFE /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		DF12D4F11AEEC7D800E3170E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DF12D4F31AEEC7DF00E3170E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DF12D4F51AEEC7E500E3170E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DF5007721B1FBAF70060BCE4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DFC867191B1617F900CCACD3 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		DFF531901AEAC25500D0CEFE /* Sparks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sparks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF531941AEAC25500D0CEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -138,6 +140,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DF5007711B1FBAE30060BCE4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DF5007721B1FBAF70060BCE4 /* User.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		DFF531871AEAC25500D0CEFE = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				DFF531951AEAC25500D0CEFE /* AppDelegate.swift */,
+				DF5007711B1FBAE30060BCE4 /* Data */,
 				DFF531B51AEAC38F00D0CEFE /* Views */,
 				DFF531BA1AEACD8D00D0CEFE /* ViewControllers */,
 				DFF531991AEAC25500D0CEFE /* Main.storyboard */,
@@ -359,6 +370,7 @@
 				DFF531BC1AEACDB200D0CEFE /* CardsViewController.swift in Sources */,
 				DFF531B71AEAC3CA00D0CEFE /* CardView.swift in Sources */,
 				DFF531961AEAC25500D0CEFE /* AppDelegate.swift in Sources */,
+				DF5007731B1FBAF70060BCE4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
