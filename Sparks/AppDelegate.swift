@@ -20,6 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId("wdgP8s4MiyZeKFHDmYXuqmj17XUrOsWWr4lTJ8Ya",
             clientKey: "JDE3kGYLIviSVEUOoUm663IZAb6KR4vpbBj5M6ZY")
         
+        var storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var initialViewController:UIViewController
+        
+        if PFUser.currentUser() != nil {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("CardsNavController") as! UIViewController
+        } else {
+            initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as! UIViewController
+        }
+        
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+        
         PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
         
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)

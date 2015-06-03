@@ -7,7 +7,7 @@
         <!--Login View Controller-->
         <scene sceneID="A3g-WO-dp1">
             <objects>
-                <viewController id="oxq-JI-P4P" customClass="LoginViewController" customModule="Sparks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="oxq-JI-P4P" customClass="LoginViewController" customModule="Sparks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hIj-yj-br1"/>
                         <viewControllerLayoutGuide type="bottom" id="P7W-yc-RMl"/>
