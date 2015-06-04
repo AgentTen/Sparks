@@ -32,11 +32,24 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
     // MARK: UIPageViewControllerDatasource
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        return nil
+        switch viewController {
+        case cardsVC:
+            return profileVC
+        case profileVC:
+            return nil
+        default:
+            return nil
+        }
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        return nil
+        switch viewController {
+        case cardsVC:
+            return nil
+        case profileVC:
+            return cardsVC
+        default:
+            return nil
+        }
     }
 }
-
