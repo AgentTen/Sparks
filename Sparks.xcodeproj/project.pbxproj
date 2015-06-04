@@ -21,6 +21,7 @@
 		DF12D4F41AEEC7DF00E3170E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF12D4F31AEEC7DF00E3170E /* libz.dylib */; };
 		DF12D4F61AEEC7E500E3170E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF12D4F51AEEC7E500E3170E /* libsqlite3.dylib */; };
 		DF5007731B1FBAF70060BCE4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5007721B1FBAF70060BCE4 /* User.swift */; };
+		DF5007751B2096C80060BCE4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5007741B2096C80060BCE4 /* ProfileViewController.swift */; };
 		DFF531961AEAC25500D0CEFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF531951AEAC25500D0CEFE /* AppDelegate.swift */; };
 		DFF531981AEAC25500D0CEFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF531971AEAC25500D0CEFE /* ViewController.swift */; };
 		DFF5319B1AEAC25500D0CEFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFF531991AEAC25500D0CEFE /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		DF12D4F31AEEC7DF00E3170E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DF12D4F51AEEC7E500E3170E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		DF5007721B1FBAF70060BCE4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DF5007741B2096C80060BCE4 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DFC867191B1617F900CCACD3 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		DFF531901AEAC25500D0CEFE /* Sparks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sparks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF531941AEAC25500D0CEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -223,8 +225,9 @@
 			isa = PBXGroup;
 			children = (
 				DFF531971AEAC25500D0CEFE /* ViewController.swift */,
-				DFF531BB1AEACDB200D0CEFE /* CardsViewController.swift */,
 				DF047DB31B163072009ED0F9 /* LoginViewController.swift */,
+				DFF531BB1AEACDB200D0CEFE /* CardsViewController.swift */,
+				DF5007741B2096C80060BCE4 /* ProfileViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				DFF531BC1AEACDB200D0CEFE /* CardsViewController.swift in Sources */,
 				DFF531B71AEAC3CA00D0CEFE /* CardView.swift in Sources */,
 				DFF531961AEAC25500D0CEFE /* AppDelegate.swift in Sources */,
+				DF5007751B2096C80060BCE4 /* ProfileViewController.swift in Sources */,
 				DF5007731B1FBAF70060BCE4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

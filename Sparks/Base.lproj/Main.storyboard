@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oxq-JI-P4P">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -91,6 +92,49 @@
             </objects>
             <point key="canvasLocation" x="1086" y="881"/>
         </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="U8l-hm-RHt">
+            <objects>
+                <viewController id="ogV-TS-wxQ" customClass="ProfileViewController" customModule="Sparks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8db-OZ-Rgb"/>
+                        <viewControllerLayoutGuide type="bottom" id="CRR-3d-hGB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YVJ-uV-e73">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JRj-5I-Juq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="537"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Do0-TO-Ot8">
+                                <rect key="frame" x="16" y="559" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CRR-3d-hGB" firstAttribute="top" secondItem="Do0-TO-Ot8" secondAttribute="bottom" constant="20" id="AGt-cY-Kqt"/>
+                            <constraint firstItem="Do0-TO-Ot8" firstAttribute="trailing" secondItem="YVJ-uV-e73" secondAttribute="trailingMargin" id="CIV-V1-UOP"/>
+                            <constraint firstItem="JRj-5I-Juq" firstAttribute="top" secondItem="8db-OZ-Rgb" secondAttribute="bottom" constant="-64" id="Dtw-sC-rUM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JRj-5I-Juq" secondAttribute="trailing" constant="-16" id="i7S-ru-iIK"/>
+                            <constraint firstItem="Do0-TO-Ot8" firstAttribute="top" secondItem="JRj-5I-Juq" secondAttribute="bottom" constant="22" id="m8N-LX-e13"/>
+                            <constraint firstItem="JRj-5I-Juq" firstAttribute="leading" secondItem="YVJ-uV-e73" secondAttribute="leadingMargin" constant="-16" id="vR9-mU-uTy"/>
+                            <constraint firstItem="Do0-TO-Ot8" firstAttribute="leading" secondItem="YVJ-uV-e73" secondAttribute="leadingMargin" id="yxy-wk-Saf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="85T-Hp-Pqs"/>
+                    <connections>
+                        <outlet property="imageView" destination="JRj-5I-Juq" id="cag-Zh-9vQ"/>
+                        <outlet property="nameLabel" destination="Do0-TO-Ot8" id="6Kd-Th-Fm9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xat-wf-Rwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="1645"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="VUj-af-b8E">
             <objects>
@@ -108,6 +152,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nux-S7-9J8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="274" y="881"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vyZ-qn-lsH">
+            <objects>
+                <navigationController storyboardIdentifier="ProfileNavController" automaticallyAdjustsScrollViewInsets="NO" id="j6x-7H-QbE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nwp-A2-QSL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ogV-TS-wxQ" kind="relationship" relationship="rootViewController" id="24O-Ek-nFY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KOX-tt-QOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="1645"/>
         </scene>
     </scenes>
 </document>
