@@ -34,3 +34,12 @@ func currentUser() -> User? {
     }
     return nil
 }
+
+func fetchUnviewUsers(callback: ([User]) -> ()) {
+    PFUser.query()?.whereKey("objectId", notEqualTo: PFUser.currentUser()!.objectId!).findObjectsInBackgroundWithBlock() { objects, error in
+        if let pfUsers = objects as? [PFUser] {
+            let users = map(pfUsers, {pfUserToUser($0)})
+            callback(users)
+        }
+    }
+}
