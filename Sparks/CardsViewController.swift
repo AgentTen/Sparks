@@ -33,7 +33,17 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         
         fetchUnviewUsers { users in
             self.users = users
-            println(self.users)
+            
+            if let card = self.popCard() {
+                self.frontCard = card
+                self.cardsStackView.addSubview(self.frontCard!.swipeView)
+            }
+            
+            if let card = self.popCard() {
+                self.backCard = card
+                self.backCard!.swipeView.frame = self.createCardFrame(self.backCardTopMargin)
+                self.cardsStackView.insertSubview(self.backCard!.swipeView, belowSubview: self.frontCard!.swipeView)
+            }
         }
     }
     
