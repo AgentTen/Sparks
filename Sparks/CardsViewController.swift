@@ -83,12 +83,28 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         return nil
     }
     
+    private func switchCards() {
+        if let card = backCard {
+            frontCard = card
+            UIView.animateWithDuration(0.2, animations: {
+                self.frontCard!.swipeView.frame = self.createCardFrame(self.frontCardTopMargin)
+            })
+        }
+        
+        if let card = popCard() {
+            backCard = card
+            backCard!.swipeView.frame = createCardFrame(backCardTopMargin)
+            cardsStackView.insertSubview(backCard!.swipeView, belowSubview: frontCard!.swipeView)
+        }
+    }
+    
     // MARK: SwipeViewDelegate
     
     func swipedLeft() {
         println("left")
         if let frontCard = frontCard {
             frontCard.swipeView.removeFromSuperview()
+            switchCards()
         }
     }
     
@@ -96,6 +112,7 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         println("right")
         if let frontCard = frontCard {
             frontCard.swipeView.removeFromSuperview()
+            switchCards()
         }
     }
     
