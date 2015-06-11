@@ -55,7 +55,7 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        navigationItem.titleView = UIImageView(image: UIImage(named: "nav-header"))
+//        navigationItem.titleView = UIImageView(image: UIImage(named: "nav-header"))
         let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav-back-button"), style: UIBarButtonItemStyle.Plain, target: self, action: "goToProfile:")
         navigationItem.setLeftBarButtonItem(leftBarButtonItem, animated: true)
     }

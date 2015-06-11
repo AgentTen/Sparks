@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E33b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -11,41 +11,77 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sparkler" translatesAutoresizingMaskIntoConstraints="NO" id="zop-Dl-UOd">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sparks_icon" translatesAutoresizingMaskIntoConstraints="NO" id="zop-Dl-UOd">
+                    <rect key="frame" x="156" y="125" width="169" height="169"/>
+                    <rect key="contentStretch" x="1.3877787807814457e-17" y="0.0" width="1" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="169" id="tgw-lF-71o"/>
+                        <constraint firstAttribute="width" constant="169" id="xcX-bv-ARR"/>
+                    </constraints>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 ryanfarley. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
+                    <rect key="frame" x="20" y="439" width="441" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.2156862745" green="0.49019607840000001" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sparks" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="140" width="441" height="43"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sparks" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
+                    <rect key="frame" x="178" y="302" width="124" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31.5" id="2TO-ST-4Uc"/>
+                        <constraint firstAttribute="width" constant="124" id="6Yk-fI-cj3"/>
+                        <constraint firstAttribute="width" constant="84" id="b7H-VV-wEY"/>
+                        <constraint firstAttribute="height" constant="48" id="ph4-uR-8zj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                    <color key="textColor" red="0.96078431372549022" green="0.42745098039215684" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="2TO-ST-4Uc"/>
+                            <exclude reference="b7H-VV-wEY"/>
+                        </mask>
+                    </variation>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="5cJ-9S-tgC"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="73.5" id="5cJ-9S-tgC"/>
+                <constraint firstItem="zop-Dl-UOd" firstAttribute="centerY" secondItem="kId-c2-rCX" secondAttribute="centerY" constant="6.25" id="8N2-r8-cxJ"/>
                 <constraint firstAttribute="trailing" secondItem="zop-Dl-UOd" secondAttribute="trailing" id="CGr-sF-Gxt"/>
+                <constraint firstItem="zop-Dl-UOd" firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" constant="0.5" id="EEc-0t-i91"/>
                 <constraint firstItem="zop-Dl-UOd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Gcz-DQ-O18"/>
                 <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
+                <constraint firstAttribute="centerY" secondItem="zop-Dl-UOd" secondAttribute="centerY" constant="30.5" id="PL1-3Q-cks"/>
+                <constraint firstAttribute="centerX" secondItem="zop-Dl-UOd" secondAttribute="centerX" constant="-0.5" id="TVj-2e-Wkj"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
                 <constraint firstAttribute="bottom" secondItem="zop-Dl-UOd" secondAttribute="bottom" id="cRQ-rc-bou"/>
+                <constraint firstItem="zop-Dl-UOd" firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" constant="-0.5" id="feF-K9-SY5"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="zop-Dl-UOd" secondAttribute="bottom" constant="8" id="jW0-j0-2hQ"/>
                 <constraint firstItem="zop-Dl-UOd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tC5-xc-vvb"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="8N2-r8-cxJ"/>
+                    <exclude reference="CGr-sF-Gxt"/>
+                    <exclude reference="Gcz-DQ-O18"/>
+                    <exclude reference="cRQ-rc-bou"/>
+                    <exclude reference="feF-K9-SY5"/>
+                    <exclude reference="tC5-xc-vvb"/>
+                    <exclude reference="5cJ-9S-tgC"/>
+                    <exclude reference="Koa-jz-hwk"/>
+                    <exclude reference="fvb-Df-36g"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
     <resources>
-        <image name="Sparkler" width="2272" height="1704"/>
+        <image name="sparks_icon" width="602" height="603"/>
     </resources>
 </document>

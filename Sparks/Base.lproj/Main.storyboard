@@ -56,7 +56,7 @@
             </objects>
             <point key="canvasLocation" x="1086" y="103"/>
         </scene>
-        <!--Cards View Controller-->
+        <!--sparks-->
         <scene sceneID="2Pa-sk-AAq">
             <objects>
                 <viewController id="aRz-ph-9cW" customClass="CardsViewController" customModule="Sparks" customModuleProvider="target" sceneMemberID="viewController">
@@ -114,7 +114,7 @@
                             <constraint firstAttribute="centerX" secondItem="aD3-Uj-h71" secondAttribute="centerX" id="yU4-01-4df"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VW3-fH-8Zp"/>
+                    <navigationItem key="navigationItem" title="sparks" id="VW3-fH-8Zp"/>
                     <connections>
                         <outlet property="cardsStackView" destination="aD3-Uj-h71" id="r9P-qY-8NK"/>
                         <outlet property="nahButton" destination="TCl-hs-Gr7" id="yjI-oe-b5u"/>
@@ -176,6 +176,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HEJ-VQ-njd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                            <color key="textColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
