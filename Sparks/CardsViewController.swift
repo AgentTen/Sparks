@@ -20,6 +20,8 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
     let backCardTopMargin: CGFloat = 10
     
     @IBOutlet weak var cardsStackView: UIView!
+    @IBOutlet weak var nahButton: UIButton!
+    @IBOutlet weak var yeahButton: UIButton!
     
     var backCard: Card?
     var frontCard: Card?
@@ -30,6 +32,9 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         super.viewDidLoad()
 
         cardsStackView.backgroundColor = UIColor.clearColor()
+        
+        nahButton.setImage(UIImage(named: "nah-button-pressed"), forState: UIControlState.Highlighted)
+        yeahButton.setImage(UIImage(named: "yeah-button-pressed"), forState: UIControlState.Highlighted)
         
         fetchUnviewUsers { users in
             self.users = users
@@ -57,6 +62,20 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func nahButtonPressed(sender: UIButton) {
+        
+        if let card = frontCard {
+            card.swipeView.swipe(SwipeView.Direction.Left)
+        }
+    }
+    
+    @IBAction func yeahButtonPressed(sender: UIButton) {
+        
+        if let card = frontCard {
+            card.swipeView.swipe(SwipeView.Direction.Right)
+        }
     }
     
     private func createCardFrame(topMargin: CGFloat) -> CGRect {
