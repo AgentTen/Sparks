@@ -43,3 +43,11 @@ func fetchUnviewUsers(callback: ([User]) -> ()) {
         }
     }
 }
+
+func saveSkip(user: User) {
+    let skip = PFObject(className: "Action")
+    skip.setObject(PFUser.currentUser()!.objectId!, forKey: "byUser")
+    skip.setObject(user.id, forKey: "toUser")
+    skip.setObject("skipped", forKey: "type")
+    skip.saveInBackground()
+}
